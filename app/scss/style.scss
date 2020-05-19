@@ -66,6 +66,7 @@
     line-height: 30px;
   }
 }
+
 //END HEADER
 
 //START SEARCH
@@ -93,7 +94,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
 
   &-form {
@@ -114,9 +115,11 @@
       outline: none;
       box-sizing: border-box;
       border: 2px solid transparent;
+
       &:focus {
         border: 2px solid dodgerblue;
       }
+
       &::placeholder {
         color: #90a4ae;
       }
@@ -132,6 +135,7 @@
     }
   }
 }
+
 //END SEARCH
 
 //START PRODUCTS
@@ -144,7 +148,6 @@
   text-align: center;
   margin-bottom: 60px;
 
-
   button {
     padding: 13px 22px;
     background-color: #fff;
@@ -153,6 +156,11 @@
     cursor: pointer;
     font-weight: 500;
 
+    &.mixitup-control-active {
+      background-color: $red;
+      color: #fff;
+      outline: none;
+    }
 
     & + button {
       margin-left: 5px;
@@ -160,10 +168,19 @@
   }
 }
 
+.products__inner-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
 .product__item {
   max-width: 442px;
   width: 100%;
   box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px;
+
 
   &-img {
     display: block;
@@ -213,7 +230,49 @@
     padding: 10px 30px;
   }
 
+  &-author {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      margin-right: 13px;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
 }
+
+.products__bottom-btn {
+  text-align: center;
+  button {
+    margin: 45px 5px 0;
+    box-shadow: 0 1px 3px rgba(204, 216, 228, 0.75);
+    padding: 20px 32px;
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: $bg;
+
+    &.mixitup-control-active {
+      background-color: $red;
+      color: #fff;
+      outline: none;
+    }
+  }
+}
+
 
 
 
