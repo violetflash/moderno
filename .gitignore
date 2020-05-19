@@ -2,7 +2,6 @@
 .AppleDouble
 .LSOverride
 .git/
-
 .idea/
 node_modules/
 app/css/
