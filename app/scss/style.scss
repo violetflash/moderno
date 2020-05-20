@@ -397,4 +397,49 @@
 }
 //END ADVANTAGES
 
+//START AUTHOR
+.author {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 761px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    background-color: $green;
+    padding: 0 60px;
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 30px;
+    line-height: 30px;
+    max-width: 260px;
+    margin-right: 48px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    //display: inline-block;
+    padding: 14px 36px;
+    background-color: $white;
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+
+//END AUTHOR
+
 
