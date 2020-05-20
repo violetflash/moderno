@@ -71,9 +71,9 @@
 
 //START SEARCH
 .search {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include bg-prop;;
+  width: 370px;
+  height: 270px;
   min-height: 533px;
 }
 
@@ -108,7 +108,9 @@
       border-radius: 4px;
       box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
       height: 56px;
-      padding-left: 25px;
+      padding-left: 25px;;
+      width: 370px;
+      height: 270px;
       padding-right: 60px;
       font-size: 14px;
       font-weight: 500;
@@ -185,9 +187,7 @@
   &-img {
     display: block;
     min-height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    @include bg-prop;
   }
 
   &-content {
@@ -240,13 +240,15 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+      @include bg-prop;
+      width: 370px;
+      height: 270px;
       margin-right: 13px;
     }
 
     span {
+      width: 370px;
+      height: 270px;
       display: inline-block;
       font-size: 14px;
       font-weight: 500;
@@ -399,9 +401,7 @@
 
 //START AUTHOR
 .author {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  @include bg-prop;
   min-height: 761px;
   display: flex;
   justify-content: center;
@@ -438,8 +438,39 @@
     line-height: 36px;
   }
 }
-
-
 //END AUTHOR
 
+//START TUTORIAL
+.tutorial {
+  padding: 70px 120px;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 15px;
+    background-color: #f8f8f8;
+
+    &-image {
+      @include bg-prop;
+      width: 370px;
+      height: 270px;
+    }
+
+    &-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      color: $bg;
+      padding: 30px 10px;
+    }
+  }
+
+}
+
+
+//END TUTORIAL

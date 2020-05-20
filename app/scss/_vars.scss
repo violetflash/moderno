@@ -5,3 +5,9 @@ $bg: #263238;
 $gray: #f4f6f5;
 $white: #fff;
 $bobec: #b0bec5;
+
+@mixin bg-prop {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
