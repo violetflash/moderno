@@ -14,6 +14,6 @@ $(function () {
         dots: true,
         arrows: false,
         infinite : false,
-    })
+    });
 
 });
