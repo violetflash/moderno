@@ -72,8 +72,6 @@
 //START SEARCH
 .search {
   @include bg-prop;;
-  width: 370px;
-  height: 270px;
   min-height: 533px;
 }
 
@@ -109,8 +107,6 @@
       box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
       height: 56px;
       padding-left: 25px;;
-      width: 370px;
-      height: 270px;
       padding-right: 60px;
       font-size: 14px;
       font-weight: 500;
@@ -245,8 +241,6 @@
     }
 
     span {
-      width: 370px;
-      height: 270px;
       display: inline-block;
       font-size: 14px;
       font-weight: 500;
