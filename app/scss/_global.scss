@@ -119,3 +119,17 @@ body {
     }
   }
 }
+
+.angle-right {
+  position: relative;
+  padding-left: 15px;
+  &::before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: "\f105";
+    color: $green;
+    font-size: 14px;
+    left: 0;
+
+  }
+}
