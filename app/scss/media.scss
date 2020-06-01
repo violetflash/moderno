@@ -7,6 +7,10 @@
     min-width: 100%;
     margin-bottom: 30px;
   }
+
+  .header__text {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -27,20 +31,32 @@
   }
 }
 
-@media (max-width: 900px) {
-
-  .footer__cop-social {
-    margin-top: 30px;
-    min-width: 100%;
+@media (max-width: 840px) {
+  .menu__list {
+    display: none;
   }
 
-  .footer__inner {
-    justify-content: flex-start;
+  .menu__btn {
+    display: block;
+    width: 60px;
+    div {
+      background-color: white;
+      height: 3px;
+    }
+  }
+}
+
+
+@media (max-width: 540px) {
+
+  .footer__col-menu {
+    min-width: 100%;
   }
 
   .footer__col-menu {
     & + & {
-      margin-left: 60px;
+      margin-left: 0;
+      margin-top: 30px;
     }
   }
 }
