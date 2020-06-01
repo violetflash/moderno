@@ -29,8 +29,10 @@
 .header__btn-login--off {
   display: none;
 }
+
 .header__btn-logout {
   display: none;
+
   &.header__btn-login--on {
     display: block;
   }
@@ -41,6 +43,7 @@
   &.active {
     display: block;
   }
+
   display: none;
   width: 34px;
   height: 34px;
@@ -137,8 +140,6 @@
 }
 
 
-
-
 .user__box,
 .basket__box,
 .message__box,
@@ -146,6 +147,7 @@
   position: relative;
   height: 90px;
   margin-top: 40px;
+
   &:hover {
     .user__menu {
       height: auto;
@@ -160,10 +162,19 @@
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 0 solid #e0e0e0;
   border-top: none;
-  padding: 23px;
+  padding: 0 23px;
   width: 269px;
+  position: relative;
+  transition: all .3s;
+
+  &::before {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    color: $bobec;
+  }
 }
 
 .circle__info {
@@ -193,12 +204,22 @@
 .message__box,
 .notification__box {
   margin-top: 55px;
-  margin-left: 15px ;
+  margin-left: 15px;
 
   &:hover {
+
+    .header__circle::before {
+      color: black;
+    }
+
     .circle__menu {
       height: auto;
       border-top: 1px solid #ccc;
+    }
+
+    .circle__item {
+      padding: 23px;
+      border-width: 1px;
     }
   }
 }
@@ -255,7 +276,7 @@
   position: absolute;
   width: 158px;
   box-shadow: 0 16px 20px rgba(52, 52, 52, 0.75);
-  border: 0  solid #cccccc;
+  border: 0 solid #cccccc;
   background-color: #ffffff;
   padding: 0 20px;
   top: 69px;
@@ -263,6 +284,7 @@
   transition: all .3s;
   height: 0;
   overflow: hidden;
+
   a {
     font-size: 12px;
     color: #546e7a;
@@ -320,23 +342,43 @@
   }
 }
 
+.message__menu,
+.notification__menu {
+  .circle__images {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .circle__info {
+    line-height: 18px;
+  }
+}
+.icons-color::before {
+  color: tomato;
+}
+
+
 //END HEADER
 
 //START SEARCH
 .search {
   @include bg-prop;;
   min-height: 533px;
+
   &.page-search {
     min-height: 230px;
+
     .search__inner {
       padding: 55px 0 70px;
+
       &-text {
         margin-bottom: 20px;
       }
     }
   }
 }
-
 
 
 .search__inner {
@@ -524,6 +566,7 @@
 
 .products__bottom-btn {
   text-align: center;
+
   button {
     margin: 45px 5px 0;
     box-shadow: 0 1px 3px rgba(204, 216, 228, 0.75);
@@ -541,6 +584,7 @@
     }
   }
 }
+
 //END PRODUCTS
 
 //START PRODUCT-SLIDER
@@ -551,6 +595,7 @@
     text-align: center;
     margin-top: 50px;
   }
+
   li {
     display: inline-block;
 
@@ -573,12 +618,14 @@
     }
 
   }
+
   li + li {
     margin-left: 7px;
   }
 
 
 }
+
 //END PRODUCT-SLIDER
 
 //START ADVANTAGES
@@ -609,6 +656,7 @@
           fill: #fff;
         }
       }
+
       .advantages__item-title {
         color: $green;
       }
@@ -648,6 +696,7 @@
 
   }
 }
+
 //END ADVANTAGES
 
 //START AUTHOR
@@ -689,6 +738,7 @@
     line-height: 36px;
   }
 }
+
 //END AUTHOR
 
 //START TUTORIAL
@@ -722,6 +772,7 @@
   }
 
 }
+
 //END TUTORIAL
 
 
@@ -800,7 +851,7 @@
 
 
 .footer__copy {
-border-top: 1px solid #424d53;
+  border-top: 1px solid #424d53;
 
   &-text {
     color: #919699;
@@ -858,12 +909,15 @@ border-top: 1px solid #424d53;
 .link-twitter {
   background-position: -84px 0;
 }
+
 .link-youtube {
   background-position: -112px -0;
 }
+
 .link-pinterest {
   background-position: -56px -0;
 }
+
 .link-linkedin {
   background-position: -28px -0;
 }
@@ -916,6 +970,7 @@ border-top: 1px solid #424d53;
     }
   }
 }
+
 //END FOOTER
 
 
@@ -978,6 +1033,7 @@ border-top: 1px solid #424d53;
 .price-range {
   form {
     padding: 20px 0 0;
+
     button {
       background-color: $green;
       padding: 16px 10px;
@@ -987,6 +1043,7 @@ border-top: 1px solid #424d53;
       color: $white;
       text-align: center;
       cursor: pointer;
+
       span {
         font-family: Roboto, sans-serif;
         font-weight: 500;
@@ -1020,13 +1077,13 @@ border-top: 1px solid #424d53;
   background-color: $white;
   top: 19px;
   cursor: pointer;
-  
+
   &:hover {
     background-color: #fff;
   }
 }
 
-.irs--flat .irs-handle>i:first-child {
+.irs--flat .irs-handle > i:first-child {
   display: none;
 }
 
@@ -1045,11 +1102,11 @@ border-top: 1px solid #424d53;
 }
 
 .irs--flat .irs-to:before,
-.irs--flat .irs-from:before{
+.irs--flat .irs-from:before {
   display: none;
 }
 
-.product-page__aside{
+.product-page__aside {
   .product__item {
     box-shadow: none;
     padding-top: 30px;
@@ -1058,7 +1115,7 @@ border-top: 1px solid #424d53;
   }
 
   .product__item-img {
-      min-height: 121px;
+    min-height: 121px;
   }
 
   .product__item-content {
@@ -1083,6 +1140,7 @@ border-top: 1px solid #424d53;
   .product__item-starnum {
     display: none;
   }
+
   .rate-star {
     margin-right: 0;
   }
@@ -1136,6 +1194,7 @@ border-top: 1px solid #424d53;
 
       .product__item-price {
         font-size: 30px;
+
         span {
           display: block;
           font-size: 13px;
@@ -1161,6 +1220,7 @@ border-top: 1px solid #424d53;
 
   .product__item-list {
     display: none;
+
     .icon-comment-o,
     .icon-heart-o {
       position: relative;
@@ -1169,17 +1229,19 @@ border-top: 1px solid #424d53;
       color: #70838d;
       padding-left: 50px;
       border-left: 2px solid $bobec;
+
       span {
         font-weight: 500;
         color: $bg;
       }
+
       &::before {
         color: $green;
         font-size: 16px;
         position: absolute;
         left: 20px;
         bottom: -1px;
-        
+
       }
     }
 
@@ -1198,7 +1260,7 @@ border-top: 1px solid #424d53;
     }
   }
 
-  .product__item-img{
+  .product__item-img {
     min-height: 180px;
   }
 
@@ -1206,6 +1268,7 @@ border-top: 1px solid #424d53;
     padding: 25px 20px 10px;
     align-items: normal;
   }
+
   .product__item-title {
     font-size: 16px;
   }
@@ -1274,10 +1337,12 @@ button.icon-unsorted {
 
   li {
     display: inline-block;
+
     & + li {
       margin-left: 6px;
     }
   }
+
   a,
   span {
     width: 43px;
@@ -1296,6 +1361,15 @@ button.icon-unsorted {
     }
   }
 }
+//END OF PRODUCT PAGE
+
+
+
+
+
+
+//END OF STYLE.SCSS
+@import "media";
 
 
 
