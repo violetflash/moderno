@@ -197,6 +197,7 @@
   height: 0;
   overflow: hidden;
   transition: all .4s;
+  z-index: 1;
 }
 
 
@@ -247,6 +248,7 @@
 .header__menu {
   background-color: $bg;
 }
+
 
 .menu {
   display: flex;
@@ -357,6 +359,11 @@
 }
 .icons-color::before {
   color: tomato;
+}
+
+.header__btn-menu,
+.menu__btn {
+  display: none;
 }
 
 

@@ -50,6 +50,7 @@ body {
   font-size: 15px;
   line-height: 24px; /* Так не желательно делать */
   color: $text;
+  overflow-x: hidden;
 }
 
 .container {
