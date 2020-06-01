@@ -140,7 +140,9 @@
 
 
 .user__box,
-.basket__box {
+.basket__box,
+.message__box,
+.notification__box {
   position: relative;
   height: 90px;
   margin-top: 40px;
@@ -154,7 +156,7 @@
   }
 }
 
-.basket__item {
+.circle__item {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -164,28 +166,39 @@
   width: 269px;
 }
 
-.basket__info {
+.circle__info {
   margin-left: 15px;
 }
 
-.basket__menu {
+.circle__info-date {
+  font-size: 10px;
+  color: #707070;
+}
+
+.circle__menu {
+  box-shadow: 0 16px 20px rgba(52, 52, 52, 0.75);
   position: absolute;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
   top: 62px;
   right: 0;
-  border: 1px solid #e0e0e0;
+  border-top: none;
   height: 0;
   overflow: hidden;
   transition: all .4s;
 }
 
 
-.basket__box {
+.basket__box,
+.message__box,
+.notification__box {
   margin-top: 55px;
   margin-left: 15px ;
 
   &:hover {
-    .basket__menu {
+    .circle__menu {
       height: auto;
+      border-top: 1px solid #ccc;
     }
   }
 }
@@ -257,17 +270,17 @@
   }
 }
 
-.basket__info-name {
+.circle__info-name {
   font-weight: 500;
   color: $bg;
 }
 
-.basket__info-theme {
+.circle__info-theme {
   font-size: 12px;
   color: $green;
 }
 
-.basket__info-price {
+.circle__info-price {
   font-weight: 500;
   color: #000;
   font-size: 16px;
