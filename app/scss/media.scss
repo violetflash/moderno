@@ -34,6 +34,26 @@
 @media (max-width: 840px) {
   .menu__list {
     display: none;
+    background-color: #263238;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    padding-bottom: 30px;
+    text-align: center;
+    border-top: 1px solid #fff;
+    z-index: 1;
+    li {
+      display: block;
+      &+li {
+        margin-left: 0;
+      }
+    }
+    a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #fff;
+    }
   }
 
   .menu__btn {
@@ -53,6 +73,9 @@
   .notification__box,
   .message__box {
     display: none;
+  }
+  .circle__menu {
+    right: auto;
   }
 }
 
@@ -86,7 +109,7 @@
   .header__btn-menu {
     width: 70px;
     height: 70px;
-    background-color: #f4f6f5;
+    background-color: #fff;
     position: absolute;
     right: 0;
     top: 0;
@@ -103,7 +126,7 @@
   .header__box {
     transition: all .5s;
     position: absolute;
-    background-color: #f4f6f5;
+    background-color: #fff;
     padding: 0 20px;
     height: 70px;
 
@@ -131,6 +154,9 @@
   .circle__menu {
     top: 52px;
   }
+  .menu__list {
+    top: 70px;
+  }
 }
 
 @media (max-width: 495px) {
@@ -152,11 +178,23 @@
   .basket__box {
     margin-left: 0;
   }
+  .menu__btn {
+    left: 10px;
+  }
 }
 
 @media (max-width: 360px) {
+  .user {
+    margin-right: 0;
+  }
   .header__logo {
     margin-left: 50px;
+  }
+  .circle__menu {
+    left: -30px;
+  }
+  .basket {
+    margin-right: 10px;
   }
 }
 

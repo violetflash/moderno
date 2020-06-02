@@ -5,6 +5,10 @@
 
 //START HEADER
 
+.header {
+  background-color: #fff;
+}
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -88,13 +92,13 @@
 }
 
 .basket {
+  margin-right: 20px;
   span {
     background-color: $green;
   }
 }
 
 .user {
-  margin-left: 20px;
   margin-right: 30px;
   position: relative;
   padding-right: 20px;
