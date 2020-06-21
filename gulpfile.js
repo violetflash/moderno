@@ -15,7 +15,9 @@ gulp.task('sass', function () {
             overrideBrowserslist: ['last 8 versions']
         }))
         .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({stream: true}))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 gulp.task('style', function () {
@@ -25,7 +27,6 @@ gulp.task('style', function () {
         'node_modules/magnific-popup/dist/magnific-popup.css',
         'node_modules/rateyo/src/jquery.rateyo.css',
         'node_modules/ion-rangeslider/css/ion.rangeSlider.css'
-
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -59,7 +60,8 @@ gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
             baseDir: "app/"
-        }
+        },
+        // port: 8000
     });
 });
 
@@ -70,3 +72,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'));
+
+
