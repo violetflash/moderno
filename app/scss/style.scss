@@ -1396,7 +1396,7 @@ button.icon-unsorted {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px;
+    padding: 20px;
     margin-bottom: 40px;
 
   }
@@ -1421,6 +1421,74 @@ button.icon-unsorted {
     font-size: 16px;
     line-height: 24px;
     max-width: 850px;
+    margin-bottom: 45px;
+  }
+
+  &__box {
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__link {
+    display: flex;
+    a + a {
+      margin-left: 18px;
+    }
+  }
+
+  &__button {
+    width: 158px;
+    height: 50px;
+    padding: 0 8px;
+    line-height: 50px;
+    background-color: $red;
+    font-size: 16px;
+    color: #f4f6f5;
+    &--dark {
+      background-color: #455a64;
+    }
+    &--green {
+      background-color: $green;
+    }
+  }
+
+  &__social-btn {
+    width: 54px;
+    padding: 0 8px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    background-color: #6370b6;
+    &+& {
+      margin-left: 3px;
+    }
+  }
+  .icon-twitter {
+    background-color: #64b5f6;
+  }
+  .icon-linkedin {
+    background-color: #4f71ce;
+  }
+  .icon-pinterest {
+    background-color: #d32f2f;
+  }
+
+  &__more {
+
+  }
+
+  &__more-title {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    padding: 20px 0 20px 28px;
+    color: #263238;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 28px;
   }
 }
 
