@@ -1657,10 +1657,50 @@ button.icon-unsorted {
   &__author-img {
     width: 73px;
     height: 63px;
+    margin-right: 16px;
   }
 
   &__author-avatar {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__author-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  &__author-name {
+    height: 14px;
+    color: #263238;
+    font-size: 18px;
+  }
+
+  &__author-profile {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #707070;
+    font-size: 13px;
+  }
+
+  &__awards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  &__award {
+    width: 34px;
+    height: 37px;
+    background-image: url('../images/content/award-yellow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
