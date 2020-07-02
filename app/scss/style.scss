@@ -1002,6 +1002,10 @@
   margin-bottom: 30px;
   width: 270px;
 
+  &--sales {
+    padding: 0;
+  }
+
 }
 
 .aside__title {
@@ -1616,11 +1620,43 @@ button.icon-unsorted {
     }
   }
 
+  &__product-price {
+    color: #e74c3c;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__type-wrapper {
+    position: relative;
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      right: 11px;
+      top: 17px;
+      transform: translateY(-50%);
+      font-family: 'icomoon' !important;
+      content: "\f0d7";
+      font-size: 13px;
+      color: $green;
+      pointer-events: none;
+    }
+  }
+
+  &__type {
+    padding: 8px 27px 8px 11px;
+    border: 1px solid #cccccc;
+    appearance: none;
+    color: #70838d;
+    font-size: 13px;
+  }
+
   &__price-box {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 28px;
+    align-items: center;
   }
 
   &__aside-btn {
@@ -1647,6 +1683,8 @@ button.icon-unsorted {
 
   &__aside-btn-text {
     padding-left: 8px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
   }
 
   &__author-box {
@@ -1701,6 +1739,56 @@ button.icon-unsorted {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    font-size: 20px;
+
+    &--red {
+      background-image: url('../images/content/award-red.png');
+    }
+    &--blue {
+      background-image: url('../images/content/award-blue.png');
+    }
+    &--green {
+      background-image: url('../images/content/award-green.png');
+    }
+    &--grey {
+      background-image: url('../images/content/award-grey.png');
+    }
+  }
+
+  &__sales {
+    padding: 23px 28px;
+    color: #a6b5bb;
+    font-size: 20px;
+  }
+
+  &__quantity {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__sales-text {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__property {
+    color: #263238;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  &__product-info {
+    margin-top: 28px;
+  }
+
+  &__info {
+    color: #70838d;
   }
 }
 
