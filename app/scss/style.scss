@@ -1009,6 +1009,7 @@
   font-weight: 700;
   color: $bg;
   padding: 26px 0 19px;
+  border-bottom: 1px solid #dde3e8;
 }
 
 .category__list {
@@ -1122,7 +1123,10 @@
     box-shadow: none;
     padding-top: 30px;
     margin-bottom: 30px;
-    border-top: 1px solid #dde3e8;
+
+    & + .product__item {
+      border-top: 1px solid #dde3e8;
+    }
   }
 
   .product__item-img {
@@ -1543,9 +1547,12 @@ button.icon-unsorted {
     font-weight: 700;
   }
 
+  &__tabs {
+    margin-bottom: 52px;
+  }
+
   .tabs {
     display: flex;
-    //justify-content: space-between;
     text-align: center;
     border: 1px solid #d7d7d7;
     cursor: pointer;
@@ -1554,8 +1561,58 @@ button.icon-unsorted {
   .tab {
     width: 100%;
     background-color: #fff;
+    color: #70838d;
+    font-size: 16px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & + .tab {
-      border: 1px solid #d7d7d7;
+      border-left: 1px solid #d7d7d7;
+    }
+    &.active {
+      color: #263238;
+      font-size: 16px;
+      font-weight: 500;
+      border-bottom: 3px solid $green;
+    }
+  }
+
+  .tab_content {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    padding: 38px 36px 66px;
+  }
+
+  .tab-item {
+    display: none;
+
+    &.active-tab {
+      display: block;
+    }
+
+    &__item {
+      position: relative;
+      padding-left: 20px;
+      &::before {
+        position: absolute;
+        content: '\f105';
+        font-family: 'icomoon' !important;
+        font-size: 18px;
+        left: 0;
+        top: -1px;
+        color: $green;
+      }
+    }
+
+    &__list {
+      color: #707070;
+      font-size: 16px;
+      line-height: 36px;
+      column-count: 2;
+      //column-width: 250px;
+      column-gap: 25px;
     }
   }
 }
