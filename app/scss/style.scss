@@ -378,8 +378,9 @@
   background-color: $green;
   max-width: 730px;
   width: 100%;
-  height: 484px;
   text-align: center;
+  padding-top: 92px;
+  padding-bottom: 114px;
 
   &__title {
     text-align: center;
@@ -387,22 +388,25 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 42px;
-    margin-top: 92px;
+  }
+
+  &__form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   &__name,
   &__password{
-    display: block;
-    max-width: 400px;
     width: 100%;
     height: 43px;
-    margin: 0 auto;
     margin-bottom: 8px;
     background-color: #76ae36;
     border: none;
     color: #fff;
     padding: 0 20px;
     outline: transparent;
+    font-size: 14px;
 
     &::placeholder {
       color: #fff;
