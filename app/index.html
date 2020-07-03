@@ -150,7 +150,7 @@
                     </ul>
                   </div>
                 </div>
-                <a class="header__btn header__btn-login" data-fancybox data-src="#login" href="javascript:">Login</a>
+                <a class="header__btn header__btn-login" data-fancybox data-src="#modal" href="javascript:">Login</a>
                 <a class="header__btn header__btn-logout header__btn-login--off" href="">Logout</a>
                 <a class="header__btn header__btn-register" href="">Register</a>
               </div>
@@ -1079,7 +1079,7 @@
     </footer>
   </div>
 
-  <div class="login" id="login">
+  <div class="login" id="modal">
     <div class="login__title">
       Login
     </div>
@@ -1088,9 +1088,11 @@
         <input class="login__name" type="text" placeholder="Name" required>
       </label>
       <label for="" class="login__password-label">
-        <input class="login__password" type="text" placeholder="Password" required>
+        <input class="login__password" type="password" placeholder="Password" required>
       </label>
-      <button class="login__btn">SUBMIT</button>
+      <button class="login__btn" type="submit">SUBMIT</button>
+      <a class="login__register" href="#" ><span class="login__register-text">Create An Account?</span></a>
+      <a class="login__forgot" href="" >Lost Password?</a>
     </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

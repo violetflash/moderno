@@ -370,8 +370,51 @@
   display: none;
 }
 
-
 //END HEADER
+
+//START LOGIN
+
+.login {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  height: 484px;
+  text-align: center;
+
+  &__title {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 42px;
+    margin-top: 92px;
+  }
+
+  &__name,
+  &__password{
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    height: 43px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    background-color: #76ae36;
+    border: none;
+    color: #fff;
+    padding: 0 20px;
+    outline: transparent;
+
+    &::placeholder {
+      color: #fff;
+      caret-color: #fff;
+    }
+
+
+  }
+
+}
+
+//END LOGIN
 
 //START SEARCH
 .search {
