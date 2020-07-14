@@ -112,6 +112,7 @@ body {
       &:last-child {
         a, span {
           color: $bg;
+          cursor: default;
         }
       }
     }
