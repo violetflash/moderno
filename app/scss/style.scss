@@ -378,7 +378,6 @@
   background-color: $green;
   max-width: 730px;
   width: 100%;
-  text-align: center;
   padding-top: 92px;
   padding-bottom: 114px;
 
@@ -396,27 +395,110 @@
     margin: 0 auto;
   }
 
-  &__name,
-  &__password{
+  &__input {
     width: 100%;
     height: 43px;
     margin-bottom: 8px;
     background-color: #76ae36;
     border: none;
     color: #fff;
-    padding: 0 20px;
+    padding: 0 10px 0 41px;
     outline: transparent;
     font-size: 14px;
+    cursor: default;
 
     &::placeholder {
       color: #fff;
       caret-color: #fff;
     }
-
-
   }
 
+  &__label {
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    &::before {
+      position: absolute;
+      font-family: 'icomoon' !important;
+      content: "\f007";
+      bottom: -3px;
+      left: 18px;
+    }
+
+    &--password {
+      &::before {
+        content: "\f023";
+      }
+    }
+  }
+
+  &__wrapper-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  &__btn {
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+    background-color: #ffffff;
+    padding: 0 10px;
+    width: 140px;
+    height: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__register {
+    height: 50px;
+    max-width: 246px;
+    width: 100%;
+    background-color: #76ae36;
+    border: none;
+    color: #fff;
+    padding: 0 10px;
+    text-align: center;
+    outline: transparent;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__register-text {
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      position: absolute;
+      font-family: 'icomoon' !important;
+      content: "\f044";
+      left: 0;
+    }
+  }
+
+  &__forgot {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 7px;
+    margin-right: auto;
+    padding: 20px 0;
+  }
+
+  .fancybox-button svg {
+    stroke-width: 200%;
+  }
+
+  .fancybox-button svg path {
+    fill: #fff;
+  }
 }
+
+
 
 //END LOGIN
 

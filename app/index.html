@@ -1084,15 +1084,16 @@
       Login
     </div>
     <form class="login__form">
-      <label for="" class="login__name-label">
-        <input class="login__name" type="text" placeholder="Name" required>
+      <label for="" class="login__label">
+        <input class="login__input" type="text" placeholder="Name" required>
       </label>
-      <label for="" class="login__password-label">
-        <input class="login__password" type="password" placeholder="Password" required>
+      <label for="" class="login__label login__label--password">
+        <input class="login__input" type="password" placeholder="Password" required>
       </label>
-      <button class="login__btn" type="submit">SUBMIT</button>
-      <a class="login__register" href="#" ><span class="login__register-text">Create An Account?</span></a>
-      <a class="login__forgot" href="" >Lost Password?</a>
+      <div class="login__wrapper-box">
+        <button class="login__btn" type="submit">SUBMIT</button>
+        <a class="login__register" href="#"><span class="login__register-text">Create An Account?</span></a></div>
+      <a class="login__forgot" href="#">Lost Password?</a>
     </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
