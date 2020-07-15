@@ -2021,7 +2021,7 @@ button.icon-unsorted {
     color: #444444;
     font-size: 20px;
     font-weight: 700;
-    margin: 44px 0 23px;
+    margin: 44px 0 10px;
     padding: 0 56px;
   }
 
@@ -2033,8 +2033,114 @@ button.icon-unsorted {
     margin: 0 auto;
   }
 }
-
 // ABOUT END
+
+// CONTACTS START
+.contacts {
+  &__wrapper {
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    margin-bottom: 143px;
+  }
+
+  &__head {
+    color: #444444;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 23px 28px;
+  }
+
+  &__inner {
+    background-color: $white;
+    border-top: 1px solid #d7d7d7;
+    padding: 0 40px 15px;
+  }
+
+  &__img-box {
+    max-width: 1091px;
+    height: 585px;
+    margin: 30px auto;
+
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 40px;
+    position: relative;
+    padding-bottom: 20px;
+    &::before {
+      position: absolute;
+      font-family: 'icomoon';
+      content: "\f041";
+      left: 0;
+      color: $green;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 41px;
+      content: '';
+      width: 44px;
+      height: 4px;
+      background-color: #8bc34a;
+    }
+
+    &--phone {
+      &::before {
+        content: "\f095";
+      }
+    }
+
+    &--email {
+      &::before {
+        content: "\f003";
+      }
+    }
+  }
+
+  &__data {
+    padding-left: 40px;
+    margin: 20px 0 25px;
+    max-width: 265px;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__form-title {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__form {
+    max-width: 726px;
+
+  }
+
+  &__input {
+    width: 351px;
+    height: 43px;
+    background-color: #f1f4f5;
+  }
+}
+
+// CONTACTS END
 
 
 
