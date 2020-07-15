@@ -2057,18 +2057,11 @@ button.icon-unsorted {
   }
 
   &__map {
-    max-width: 1091px;
-    height: 585px;
-    margin: 30px auto;
-
-  }
-
-  &__img {
+    padding: 30px 0 60px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 415px;
   }
+
 
   &__bottom {
     display: flex;
@@ -2131,6 +2124,12 @@ button.icon-unsorted {
 
   &__form {
     max-width: 726px;
+    width: 100%;
+  }
+
+  &__input-box {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__input {
@@ -2145,22 +2144,25 @@ button.icon-unsorted {
       font-size: 15px;
       font-weight: 400;
     }
+  }
 
-    &--name {
-      margin-right: 20px;
-    }
-    &--message {
-      max-width: 100%;
-      width: 100%;
-      height: 193px;
-      overflow-y: auto;
-      margin-top: 28px;
-      margin-bottom: 22px;
-      &::placeholder {
-        transform: translateY(-100%);
-      }
+  &__message {
+    max-width: 100%;
+    width: 100%;
+    height: 193px;
+    overflow-y: auto;
+    resize: none;
+    background-color: #f1f4f5;
+    border: none;
+    outline: transparent;
+    padding: 15px 17px;
+    margin-top: 28px;
+    margin-bottom: 22px;
+    &::placeholder {
+      //transform: translateY(+100%);
     }
   }
+
   &__form-btn {
     display: block;
     padding: 22px 35px;
