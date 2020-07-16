@@ -1605,10 +1605,6 @@ button.icon-unsorted {
     background-color: #d32f2f;
   }
 
-  &__more {
-
-  }
-
   &__more-title {
     width: 100%;
     height: 60px;
@@ -1620,8 +1616,6 @@ button.icon-unsorted {
     font-weight: 500;
     margin-bottom: 28px;
   }
-
-
 
   &__more-icon {
     display: flex;
@@ -2175,8 +2169,103 @@ button.icon-unsorted {
     cursor: pointer;
   }
 }
-
 // CONTACTS END
+
+// SETTINGS START
+.settings {
+
+  &__tabs {
+    margin-bottom: 52px;
+    display: flex;
+  }
+
+  .tabs {
+    max-width: 270px;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    cursor: pointer;
+    margin-right: 30px;
+
+  }
+
+  .tab {
+    width: 100%;
+    background-color: #fff;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    //height: 50px;
+    display: block;
+    padding: 17px 17px 17px 50px;
+    position: relative;
+    &::before {
+      position: absolute;
+      font-family: 'icomoon';
+      content: "\f105";
+      color: #444;
+      left: 25px;
+      top: 15px;
+    }
+    & + .tab {
+      border-top: 1px solid #d7d7d7;
+    }
+    &.active {
+      color: #37474f;
+      border-bottom: 2px solid $green;
+      &::before {
+        color: $green;
+      }
+    }
+  }
+
+  .tab_content {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    max-width: 100%;
+    width: 100%;
+
+  }
+
+  .tab-item {
+    display: none;
+
+    &.active-tab {
+      display: block;
+    }
+  }
+
+}
+
+.page-box {
+  &__title {
+    color: #263238;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 21px 34px 20px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  &__form {
+    margin-top: 35px;
+  }
+
+  &__input {
+    background-color: #f4f6f5;
+    outline: transparent;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    max-width: 540px;
+    width: 100%;
+  }
+
+}
+
+
+.page-box__content {
+
+}
+// SETTINGS END
+
 
 
 
