@@ -2311,6 +2311,52 @@ button.icon-unsorted {
 }
 // SETTINGS END
 
+// PROFILE START
+.profile {
+  &__status {
+    color: #70838d;
+    font-size: 13px;
+    padding: 18px 14px 10px 27px;
+    border: 1px solid #ccc;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      left: 8px;
+      top: 10px;
+    }
+
+
+    &--on {
+      &::before {
+        background-color: $green;
+
+      }
+      &::after {
+        position: absolute;
+        content: 'Online';
+        top: 9px;
+      }
+    }
+    &--off {
+      &::before {
+        background-color: $red;
+      }
+      &::after {
+        position: absolute;
+        content: 'Offline';
+        top: 9px
+      }
+    }
+  }
+
+
+}
+// PROFILE END
+
 
 
 
