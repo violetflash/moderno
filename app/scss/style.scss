@@ -2551,6 +2551,7 @@ button.icon-unsorted {
 
 // UPLOAD START
 .upload {
+  padding-bottom: 107px;
   &__inner {
     background-color: #fff;
     border: 1px solid #d7d7d7;
@@ -2573,21 +2574,33 @@ button.icon-unsorted {
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-between;
+    &--textarea {
+      align-items: normal;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__label {
     color: #444;
     font-size: 15px;
     max-width: 220px;
+    position: relative;
     &::after {
-
+      position: absolute;
+      content: '*';
+      font-size: 24px;
+      color: $green;
+      right: -13px;
+      top: -7px;
     }
   }
 
   &__property {
     max-width: 900px;
     width: 100%;
-    padding: 15px 18px;
+    padding: 9px 18px;
     border: 1px solid #d7d7d7;
     background-color: #f9f9f9;
     outline: transparent;
@@ -2595,6 +2608,22 @@ button.icon-unsorted {
       color: #707070;
       font-size: 15px;
     }
+
+    &--textarea {
+      height: 150px;
+      overflow-y: auto;
+      resize: none;
+    }
+  }
+
+  &__btn {
+    background-color: $green;
+    color: #fff;
+    padding: 16px 35px;
+    border: none;
+    cursor: pointer;
+    margin-left: 235px;
+    margin-bottom: 68px;
   }
 }
 // UPLOAD END

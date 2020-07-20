@@ -53,6 +53,8 @@ $(function () {
         return false;
     });
 
+    $('.upload__property').styler();
+
     var mixer = mixitup('.products__inner-box');
 
 

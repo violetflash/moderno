@@ -218,47 +218,55 @@
               <div class="upload__title">Upload Your item</div>
               <div class="upload__content">
                 <div class="upload__line">
-                  <label class="upload__label" for="">Select Categories</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-cat">Select Categories</label>
+                  <select class="upload__property" type="text" id="upload-cat" required>
+                    <option>Select</option>
+                    <option>Cat 1</option>
+                    <option>Cat 2</option>
+                  </select>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">Product Name</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-name">Product Name</label>
+                  <input class="upload__property" type="text" id="upload-name" placeholder="Enter your product name here ..." required>
+                </div>
+                <div class="upload__line upload__line--textarea">
+                  <label class="upload__label" for="upload-description">Product Description</label>
+                  <textarea class="upload__property upload__property--textarea" type="text" id="upload-description" placeholder="<h1> Type your text  here </h1/>" required></textarea>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">Product Description</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-file">Upload Main File</label>
+                  <input class="upload__property" type="file" id="upload-file" placeholder="Select" required>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">Upload Main File</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-screen">Upload Screenshots</label>
+                  <input class="upload__property" type="file" id="upload-screen" placeholder="Select" required>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">Upload Screenshots</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label">File Included</label>
+                  <select class="upload__property" type="text">
+                    <option>Select File Type</option>
+                    <option>Type 1</option>
+                    <option>Type 2</option>
+                  </select>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">File Included</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-dimensions">File Dimensions</label>
+                  <input class="upload__property" type="text" id="upload-dimensions" placeholder="Enter the item  dimentionss here ..." required>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">File Dimensions</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
-                </div>
-                <div class="upload__line">
-                  <label class="upload__label" for="">Item Tags</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-tag">Item Tags</label>
+                  <input class="upload__property" type="text" id="upload-tag" placeholder="Enter Tag Here" required>
                 </div>
               </div>
               <div class="upload__title">Set Your Price (US$)</div>
               <div class="upload__content">
                 <div class="upload__line">
-                  <label class="upload__label" for="">Regular License</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-regular">Regular License</label>
+                  <input class="upload__property" type="text" id="upload-regular" placeholder="$00.00" required>
                 </div>
                 <div class="upload__line">
-                  <label class="upload__label" for="">Extended License</label>
-                  <input class="upload__property" type="text" id="" placeholder="Select">
+                  <label class="upload__label" for="upload-extended">Extended License</label>
+                  <input class="upload__property" type="text" id="upload-extended" placeholder="$00.00" required>
                 </div>
               </div>
               <button class="upload__btn" type="submit">Submit</button>
