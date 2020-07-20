@@ -2425,7 +2425,6 @@ button.icon-unsorted {
   }
 
   &__info {
-  
     padding: 20px 10px 15px;
     flex-basis: 25%;
     //text-align: left;
@@ -2449,7 +2448,33 @@ button.icon-unsorted {
     font-weight: 500;
   }
 
-  .settings__tabs {
+  .tab {
+    &::before {
+      color: #d0d0d0;
+      font-size: 14px;
+      font-weight: 400;
+      content: "\f007";
+    }
+    &--products {
+      &::before {
+        content: "\f0f2";
+      }
+    }
+    &--message {
+      &::before {
+        content: "\f003";
+      }
+    }
+    &--customer {
+      &::before {
+        content: "\f0e6";
+      }
+    }
+    &--follow {
+      &::before {
+        content: "\f0c0";
+      }
+    }
 
   }
 
@@ -2493,6 +2518,7 @@ button.icon-unsorted {
       color: #263238;
       font-size: 16px;
       font-weight: 500;
+      font-style: italic;
     }
 
     &__item-number {
@@ -2504,8 +2530,21 @@ button.icon-unsorted {
     &__item-line {
       width: 100%;
       height: 15px;
-      border-radius: 4px;
+      border-radius: 3px;
       background-color: #f4f4f4;
+      margin-bottom: 23px;
+    }
+
+    &__item-skill {
+      display: block;
+      height: 15px;
+      background: repeating-linear-gradient(
+                      60deg,
+                      #b5b5b5 0,
+                      #b5b5b5 15px,
+                      #cbcbcb 15px,
+                      #cbcbcb 30px);
+      border-radius: 3px;
     }
   }
 
