@@ -2578,6 +2578,7 @@ button.icon-unsorted {
   &__label {
     color: #444;
     font-size: 15px;
+    max-width: 220px;
     &::after {
 
     }
@@ -2590,6 +2591,10 @@ button.icon-unsorted {
     border: 1px solid #d7d7d7;
     background-color: #f9f9f9;
     outline: transparent;
+    &::placeholder {
+      color: #707070;
+      font-size: 15px;
+    }
   }
 }
 // UPLOAD END
