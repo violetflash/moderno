@@ -2475,7 +2475,6 @@ button.icon-unsorted {
         content: "\f0c0";
       }
     }
-
   }
 
   .tab__content {
@@ -2547,11 +2546,53 @@ button.icon-unsorted {
       border-radius: 3px;
     }
   }
-
-
-
 }
 // PROFILE END
+
+// UPLOAD START
+.upload {
+  &__inner {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+  }
+
+  &__title {
+    color: #263238;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 33px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  &__content {
+    padding: 43px 33px;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  &__label {
+    color: #444;
+    font-size: 15px;
+    &::after {
+
+    }
+  }
+
+  &__property {
+    max-width: 900px;
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #d7d7d7;
+    background-color: #f9f9f9;
+    outline: transparent;
+  }
+}
+// UPLOAD END
 
 
 
