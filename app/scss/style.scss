@@ -93,6 +93,7 @@
 
 .basket {
   margin-right: 20px;
+
   span {
     background-color: $green;
   }
@@ -361,6 +362,7 @@
     line-height: 18px;
   }
 }
+
 .icons-color::before {
   color: tomato;
 }
@@ -417,6 +419,7 @@
     position: relative;
     color: #fff;
     font-size: 14px;
+
     &::before {
       position: absolute;
       font-family: 'icomoon' !important;
@@ -467,10 +470,11 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   &__register-text {
     position: relative;
     padding-left: 30px;
+
     &::before {
       position: absolute;
       font-family: 'icomoon' !important;
@@ -493,6 +497,7 @@
     fill: #fff;
   }
 }
+
 //END LOGIN
 
 //START SEARCH
@@ -1502,6 +1507,7 @@ button.icon-unsorted {
     }
   }
 }
+
 //END OF PRODUCT PAGE
 
 
@@ -1563,6 +1569,7 @@ button.icon-unsorted {
 
   &__link {
     display: flex;
+
     a + a {
       margin-left: 18px;
     }
@@ -1576,9 +1583,11 @@ button.icon-unsorted {
     background-color: $red;
     font-size: 16px;
     color: #f4f6f5;
+
     &--dark {
       background-color: #455a64;
     }
+
     &--green {
       background-color: $green;
     }
@@ -1591,16 +1600,20 @@ button.icon-unsorted {
     height: 50px;
     line-height: 50px;
     background-color: #6370b6;
-    &+& {
+
+    & + & {
       margin-left: 3px;
     }
   }
+
   .icon-twitter {
     background-color: #64b5f6;
   }
+
   .icon-linkedin {
     background-color: #4f71ce;
   }
+
   .icon-pinterest {
     background-color: #d32f2f;
   }
@@ -1687,9 +1700,11 @@ button.icon-unsorted {
     display: flex;
     align-items: center;
     justify-content: center;
+
     & + .tab {
       border-left: 1px solid #d7d7d7;
     }
+
     &.active {
       color: #263238;
       font-size: 16px;
@@ -1715,6 +1730,7 @@ button.icon-unsorted {
     &__item {
       position: relative;
       padding-left: 20px;
+
       &::before {
         position: absolute;
         content: '\f105';
@@ -1791,6 +1807,7 @@ button.icon-unsorted {
       background-color: $green;
       font-weight: 400;
     }
+
     &.icon-heart-o {
       background-color: #42a5f5;
       font-weight: 400;
@@ -1863,12 +1880,15 @@ button.icon-unsorted {
     &--red {
       background-image: url('../images/content/award-red.png');
     }
+
     &--blue {
       background-image: url('../images/content/award-blue.png');
     }
+
     &--green {
       background-image: url('../images/content/award-green.png');
     }
+
     &--grey {
       background-image: url('../images/content/award-grey.png');
     }
@@ -1907,6 +1927,7 @@ button.icon-unsorted {
     color: #70838d;
   }
 }
+
 //END OF PRODUCT-ONE
 
 // PAGE-404 START
@@ -1982,12 +2003,14 @@ button.icon-unsorted {
     border: 2px solid #fff;
     border-radius: 6px;
     transition: all .3s;
+
     &:hover {
       background-color: #fff;
       color: $green;
     }
   }
 }
+
 // PAGE-404 END
 
 // ABOUT START
@@ -2027,6 +2050,7 @@ button.icon-unsorted {
     margin: 0 auto;
   }
 }
+
 // ABOUT END
 
 // CONTACTS START
@@ -2068,6 +2092,7 @@ button.icon-unsorted {
     padding-left: 40px;
     position: relative;
     padding-bottom: 20px;
+
     &::before {
       position: absolute;
       font-family: 'icomoon';
@@ -2075,6 +2100,7 @@ button.icon-unsorted {
       left: 0;
       color: $green;
     }
+
     &::after {
       position: absolute;
       bottom: 0;
@@ -2132,6 +2158,7 @@ button.icon-unsorted {
     border: none;
     padding: 0 17px;
     outline: transparent;
+
     &::placeholder {
       color: #7a7a7a;
       font-size: 15px;
@@ -2151,6 +2178,7 @@ button.icon-unsorted {
     padding: 15px 17px;
     margin-top: 28px;
     margin-bottom: 22px;
+
     &::placeholder {
       //transform: translateY(+100%);
     }
@@ -2169,6 +2197,7 @@ button.icon-unsorted {
     cursor: pointer;
   }
 }
+
 // CONTACTS END
 
 // SETTINGS START
@@ -2198,6 +2227,7 @@ button.icon-unsorted {
     display: block;
     padding: 17px 17px 17px 50px;
     position: relative;
+
     &::before {
       position: absolute;
       font-family: 'icomoon';
@@ -2206,12 +2236,15 @@ button.icon-unsorted {
       left: 25px;
       top: 15px;
     }
+
     & + .tab {
       border-top: 1px solid #d7d7d7;
     }
+
     &.active {
       color: #37474f;
       border-bottom: 2px solid $green;
+
       &::before {
         color: $green;
       }
@@ -2245,7 +2278,7 @@ button.icon-unsorted {
   &__button {
     text-align: center;
   }
-  
+
   &__btn {
     display: inline-block;
     color: #fff;
@@ -2309,11 +2342,13 @@ button.icon-unsorted {
 .page-box__content {
   padding: 0 34px;
 }
+
 // SETTINGS END
 
 // PROFILE START
 .profile {
   padding-bottom: 113px;
+
   &__inner {
     display: flex;
     margin-bottom: 30px;
@@ -2331,6 +2366,7 @@ button.icon-unsorted {
     padding: 18px 14px 10px 27px;
     border: 1px solid #ccc;
     position: relative;
+
     &::before {
       position: absolute;
       content: '';
@@ -2346,16 +2382,19 @@ button.icon-unsorted {
         background-color: $green;
 
       }
+
       &::after {
         position: absolute;
         content: 'Online';
         top: 9px;
       }
     }
+
     &--off {
       &::before {
         background-color: $red;
       }
+
       &::after {
         position: absolute;
         content: 'Offline';
@@ -2374,12 +2413,13 @@ button.icon-unsorted {
     box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
     text-align: center;
     margin-bottom: 31px;
-    
+
     &--message {
       background-color: #546e7a;
       position: relative;
       padding-left: 50px;
       margin-bottom: 17px;
+
       &::before {
         position: absolute;
         content: "\f003";
@@ -2455,21 +2495,25 @@ button.icon-unsorted {
       font-weight: 400;
       content: "\f007";
     }
+
     &--products {
       &::before {
         content: "\f0f2";
       }
     }
+
     &--message {
       &::before {
         content: "\f003";
       }
     }
+
     &--customer {
       &::before {
         content: "\f0e6";
       }
     }
+
     &--follow {
       &::before {
         content: "\f0c0";
@@ -2547,11 +2591,13 @@ button.icon-unsorted {
     }
   }
 }
+
 // PROFILE END
 
 // UPLOAD START
 .upload {
   padding-bottom: 107px;
+
   &__inner {
     background-color: #fff;
     border: 1px solid #d7d7d7;
@@ -2574,9 +2620,11 @@ button.icon-unsorted {
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-between;
+
     &--textarea {
       align-items: normal;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -2585,25 +2633,25 @@ button.icon-unsorted {
   &__label {
     color: #444;
     font-size: 15px;
-    max-width: 220px;
-    position: relative;
-    &::after {
-      position: absolute;
-      content: '*';
-      font-size: 24px;
-      color: $green;
-      right: -13px;
-      top: -7px;
-    }
+    max-width: 170px;
+    width: 100%;
   }
 
+  &__star {
+    font-size: 24px;
+    color: $green;
+    padding-left: 2px;
+  }
+
+
   &__property {
-    max-width: 900px;
+    display: block;
     width: 100%;
-    padding: 9px 18px;
+    padding: 0 18px;
+    height: 40px;
     border: 1px solid #d7d7d7;
     background-color: #f9f9f9;
-    outline: transparent;
+    //outline: transparent;
     &::placeholder {
       color: #707070;
       font-size: 15px;
@@ -2613,6 +2661,10 @@ button.icon-unsorted {
       height: 150px;
       overflow-y: auto;
       resize: none;
+    }
+
+    &--select {
+      padding: 0;
     }
   }
 
@@ -2625,13 +2677,35 @@ button.icon-unsorted {
     margin-left: 235px;
     margin-bottom: 68px;
   }
+
+  .jq-selectbox {
+    &__select {
+      height: 40px;
+      padding: 0 18px;
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      font-family: Roboto, sans-serif;
+      color: #707070;
+      font-size: 15px;
+      text-shadow: none;
+      line-height: 40px;
+    }
+
+    &__trigger {
+      border-left: none;
+      right: 8px;
+      top: 3px;
+    }
+
+    &__trigger-arrow {
+
+    }
+  }
 }
+
 // UPLOAD END
-
-
-
-
-
 
 
 //END OF STYLE.SCSS
