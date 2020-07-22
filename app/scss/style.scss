@@ -2647,11 +2647,11 @@ button.icon-unsorted {
   &__property {
     display: block;
     width: 100%;
-    padding: 0 18px;
+    padding: 8px 18px;
     height: 40px;
     border: 1px solid #d7d7d7;
     background-color: #f9f9f9;
-    //outline: transparent;
+    outline: transparent;
     &::placeholder {
       color: #707070;
       font-size: 15px;
@@ -2666,6 +2666,10 @@ button.icon-unsorted {
     &--select {
       padding: 0;
     }
+
+    &--file {
+      padding: 0;
+    }
   }
 
   &__btn {
@@ -2674,7 +2678,7 @@ button.icon-unsorted {
     padding: 16px 35px;
     border: none;
     cursor: pointer;
-    margin-left: 235px;
+    margin-left: 203px;
     margin-bottom: 68px;
   }
 
@@ -2695,14 +2699,68 @@ button.icon-unsorted {
 
     &__trigger {
       border-left: none;
-      right: 8px;
-      top: 3px;
+      //right: 16px;
+      //top: -13px;
     }
 
     &__trigger-arrow {
+      right: 20px;
+      line-height: 40px;
+      top: 0;
+      border: none;
+      &::before {
+        font-family: 'icomoon';
+        content: "\f0d7";
+        color: #444;
+
+      }
+    }
+  }
+
+  .jq-file {
+    box-shadow: none;
+    border-radius: 0;
+
+    &__name {
+      height: 40px;
+      padding: 0 18px;
+      padding-left: 100px;
+      border: none;
+      background-color: #f9f9f9;
+      border-bottom-color: #f9f9f9;
+      border-radius: 0;
+      box-shadow: none;
+      color: #707070;
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 40px;
+      .focused {
+        outline: none;
+      }
+    }
+
+    &__browse {
+      top: 5px;
+      right: auto;
+      left: 9px;
+      padding: 0 12px;
+      border: 1px solid #d7d7d7;
+      border-radius: 0;
+      background: #fff;
+      box-shadow: none;
+      text-shadow: none;
+      color: #444;
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 26px;
+      height: 26px;
 
     }
   }
+
+
 }
 
 // UPLOAD END
