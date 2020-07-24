@@ -6,6 +6,10 @@
 
     &__column {
       max-width: 100%;
+      &+& {
+        max-width: 570px;
+        margin: 30px auto 0;
+      }
     }
   }
 }
@@ -79,6 +83,32 @@
       }
     }
   }
+  .page404 {
+    &__title-box {
+      display: block;
+    }
+    &__title {
+      padding-top: 50px;
+    }
+  }
+
+  .upload {
+
+    &__content,
+    &__title {
+      padding: 10px 10px;
+    }
+    &__line {
+      display: block;
+    }
+    &__label {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    &__btn {
+      margin: 0 33px 50px;
+    }
+  }
 }
 
 @media (max-width: 640px) {
@@ -88,6 +118,18 @@
   }
   .circle__menu {
     right: auto;
+  }
+
+  .page404 {
+
+    &__title {
+      font-size: 200px;
+    }
+    &__img {
+      width: 100px;
+      object-fit: cover;
+      height: 100%;
+    }
   }
 }
 
@@ -101,6 +143,16 @@
     & + & {
       margin-left: 0;
       margin-top: 30px;
+    }
+  }
+
+  .withdrawals {
+    &__content {
+      padding: 0 10px;
+      overflow-x: scroll;
+    }
+    &__field {
+      min-width: 490px;
     }
   }
 }
@@ -178,6 +230,35 @@
   .user,
   .user__images {
     margin-right: 0;
+  }
+
+  .page404 {
+
+    &__title {
+      font-size: 150px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    &__img {
+      width: 100px;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .about {
+    &__head,
+    &__title,
+    &__text{
+      padding: 23px 10px;
+      margin: 0;
+    }
   }
 }
 
