@@ -1317,12 +1317,14 @@
   width: 100%;
 
   .product__item {
-    max-width: 270px;
+    flex-basis: calc(33.333% - 30px);
+    margin-left: 30px;
     background-color: #fff;
     transition: all .5s;
 
     &.list {
       max-width: 100%;
+      flex-basis: unset;
 
       .product__item-img {
         float: left;
@@ -1431,9 +1433,10 @@
 
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
 }
 
 .product-page__filter {
