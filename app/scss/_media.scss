@@ -12,6 +12,12 @@
       }
     }
   }
+
+  .product-one {
+    &__mini-product {
+      max-width: 47%;
+    }
+  }
 }
 
 @media (max-width: 1150px) {
@@ -51,18 +57,37 @@
     }
     &__content {
       min-width: 100%;
+      margin-right: 0;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    &__author-box {
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .aside__title {
       text-align: center;
     }
-    &__images-inner {
-      max-width: 900px;
-      margin: 0 auto 15px;
+    &__awards {
+      justify-content: space-around;
     }
+
+    &__images {
+      max-width: 100%;
+    }
+
     &__text {
       min-width: 100%;
     }
     &__tabs {
       text-align: left;
       //max-width: 840px;
+    }
+    .aside__item {
+      max-width: 100%;
+      width: 100%;
     }
   }
 }
@@ -168,6 +193,19 @@
       min-width: 100%;
     }
   }
+
+  .product-one {
+    &__box {
+      display: block;
+    }
+    &__title {
+      line-height: 1.2;
+    }
+    &__link {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 640px) {
@@ -236,6 +274,24 @@
     }
     .personal-box {
       padding: 10px;
+    }
+  }
+
+  .product-one {
+    &__mini-product {
+      max-width: 100%;
+    }
+    .tabs {
+      display: block;
+    }
+    .tab {
+      & + .tab {
+        border-left: none;
+        border-top: 1px solid #dedede;
+      }
+    }
+    .tab-item__list {
+      column-count: auto;
     }
   }
 }
@@ -365,6 +421,20 @@
     &__text{
       padding: 23px 10px;
       margin: 0;
+    }
+  }
+
+  .product-one {
+    &__link {
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__button {
+      width: 100%;
+      & + & {
+        margin: 10px 0 0 ;
+      }
     }
   }
 }
