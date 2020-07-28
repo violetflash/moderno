@@ -1758,29 +1758,46 @@ button.icon-unsorted {
     font-weight: 500;
   }
 
-  &__type-wrapper {
-    position: relative;
-
-    &::after {
-      display: inline-block;
-      position: absolute;
-      right: 11px;
-      top: 17px;
-      transform: translateY(-50%);
-      font-family: 'icomoon' !important;
-      content: "\f0d7";
-      font-size: 13px;
-      color: $green;
-      pointer-events: none;
-    }
-  }
-
   &__type {
-    padding: 8px 27px 8px 11px;
     border: 1px solid #cccccc;
-    appearance: none;
     color: #70838d;
     font-size: 13px;
+    padding-right: 10px;
+  }
+
+  .jq-selectbox {
+    &__select {
+      height: 27px;
+      padding: 0 30px 0 11px;
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      font-family: Roboto, sans-serif;
+      color: #707070;
+      font-size: 15px;
+      text-shadow: none;
+      line-height: 27px;
+    }
+
+    &__trigger {
+      border-left: none;
+      top: -5px;
+      right: -5px;
+    }
+
+    &__trigger-arrow {
+      right: 20px;
+      line-height: 40px;
+      top: 0;
+      border: none;
+      &::before {
+        font-family: 'icomoon';
+        content: "\f0d7";
+        color: $green;
+
+      }
+    }
   }
 
   &__price-box {
@@ -1926,6 +1943,8 @@ button.icon-unsorted {
   &__info {
     color: #70838d;
   }
+
+
 }
 
 //END OF PRODUCT-ONE
@@ -2340,7 +2359,6 @@ button.icon-unsorted {
     margin-top: 35px;
   }
 
-
   &__input {
     background-color: #f4f6f5;
     outline: transparent;
@@ -2358,7 +2376,6 @@ button.icon-unsorted {
     height: 40px;
     max-width: 540px;
     width: 100%;
-    padding: 0 16px;
     color: #707070;
     font-size: 14px;
   }
@@ -2371,7 +2388,6 @@ button.icon-unsorted {
   }
 
 }
-
 
 .page-box__content {
   padding: 0 34px;
@@ -2481,7 +2497,7 @@ button.icon-unsorted {
     padding: 20px;
     max-width: 869px;
     height: 368px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   &__banner {
