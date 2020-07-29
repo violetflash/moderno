@@ -60,7 +60,7 @@ body {
 }
 
 .container-fluid {
-  max-width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -92,6 +92,8 @@ body {
 .breadcrumbs {
   &__inner {
     padding: 45px 0 40px;
+    overflow: hidden;
+    width: 1200px;
   }
   
   &__list {
@@ -134,4 +136,8 @@ body {
     left: 0;
 
   }
+}
+
+#modal {
+  display: none;
 }
