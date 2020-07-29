@@ -1,11 +1,46 @@
+@media (max-width: 1900px) {
+  .product-slider-inner {
+    text-align: center;
+    .product__item-category {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .product-slider-inner {
+    .product__item {
+      max-width: 550px;
+    }
+  }
+}
+
+
 @media (max-width: 1400px) {
-  .product {
-    &__item {
+  .products {
+    .product__item {
       flex-basis: calc(33.333% - 30px);
     }
   }
 }
+
+@media (max-width: 1225px) {
+  .product-slider-inner {
+    .product__item {
+      max-width: 350px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
+  .tutorial {
+    &__inner {
+      display: block;
+    }
+    &__item {
+      max-width: 100%;
+    }
+  }
   .withdrawals {
     &__inner {
       display: block;
@@ -48,6 +83,22 @@
 }
 
 @media (max-width: 1150px) {
+  .advantages {
+    &__inner {
+      flex-direction: column;
+    }
+    &__item {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+  }
+
+  .products {
+    .product__item {
+      flex-basis: calc(50% - 30px);
+    }
+  }
+
   .footer__inner {
     flex-wrap: wrap;
   }
@@ -115,6 +166,22 @@
     .aside__item {
       max-width: 100%;
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .author {
+    min-height: unset;
+    height: 450px;
+    &__box {
+      width: auto;
+      display: block;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    &__title {
+      margin: 30px auto 30px;
     }
   }
 }
@@ -196,6 +263,12 @@
 }
 
 @media (max-width: 840px) {
+  .products {
+    .product__item {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
 
   .page404 {
     &__title-box {
@@ -265,7 +338,19 @@
   }
 }
 
+@media (max-width: 800px) {
+  .product-slider-inner {
+    .product__item {
+      max-width: 100%;
+    }
+  }
+}
+
 @media (max-width: 640px) {
+  .products {
+    padding: 40px 0;
+  }
+
   .search {
     min-height: auto;
     &__inner {
@@ -286,6 +371,11 @@
     &__item-info {
       padding: 10px 15px;
     }
+  }
+
+  .product-slider,
+  .advantages{
+    padding: 40px 0;
   }
 
   .breadcrumbs {
