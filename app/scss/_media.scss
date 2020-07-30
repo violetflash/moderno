@@ -35,12 +35,17 @@
 @media (max-width: 1200px) {
   .tutorial {
     &__inner {
-      display: block;
+      margin-left: -20px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
     }
     &__item {
-      max-width: 100%;
+      flex-basis: calc(50% - 20px);
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
   }
+
   .withdrawals {
     &__inner {
       display: block;
@@ -171,6 +176,12 @@
 }
 
 @media (max-width: 840px) {
+  .tutorial {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+
   .author {
     min-height: unset;
     height: 450px;
@@ -483,6 +494,20 @@
 }
 
 @media (max-width: 540px) {
+  .login {
+    &__wrapper-box {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+  .fancybox-content {
+    padding: 40px 10px;
+  }
+
 
   .footer__col-menu {
     min-width: 100%;
