@@ -1,6 +1,8 @@
+.DS_Store
+.AppleDouble
+.LSOverride
 .git/
-__pycache__/
 .idea/
-venv/
-psd/
 node_modules/
+app/css/
+.vs
